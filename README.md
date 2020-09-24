@@ -6,3 +6,28 @@
 
 **这里的README.md只是为了熟悉Markdown常用语法**<br>
 Markdown常用语法是参考链接[GitHub上README.md教程](https://blog.csdn.net/a15920804969/article/details/80460537)
+
+## 第一章 分享一个Python代码
+```Python
+import cv2
+
+capture = cv2.VideoCapture(0)
+
+while(True):
+    ret, frame = capture.read()
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    #打印出获取图像的信息
+    width, height = capture.get(3), capture.get(4)
+    #print(width, height)
+    frame_rate = capture.get(5)
+    #print(frame_rate)
+    text = 'Frame rate = '+str(frame_rate)+' '+'Image size = '+str(width)+'*'+str(height)
+    cv2.putText(frame,text, (20,20), cv2.FONT_HERSHEY_SIMPLEX, 0.7,(0,0,255), 1, cv2.LINE_AA)
+    
+    cv2.imshow('frame',frame)
+    
+    if cv2.waitKey(1) == ord('q'):
+        break
+
+capture.release()
+cv2.destroyAllWindows()
