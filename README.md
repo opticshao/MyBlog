@@ -35,3 +35,10 @@ while(True):
 
 capture.release()
 cv2.destroyAllWindows()
+```
+在这个代码中，主要是调用电脑的摄像头，获取实时图像，并将尺寸还有帧率打印在图像上。但是在[原网页](http://codec.wang/#/opencv/start/03-open-camera)中，代码好像是不太完整的，最后应该加上<br>
+```Python
+capture.release()
+cv2.destroyAllWindows()
+```
+这两句，要不然是不能运行出来的
