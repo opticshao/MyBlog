@@ -9,10 +9,16 @@ Markdown常用语法是参考链接[GitHub上README.md教程](https://blog.csdn.
 
 ## 第一章 分享一个Python代码
 ```Python
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Sep 21 15:49:13 2020
+http://codec.wang/#/opencv/start/03-open-camera
+网站代码中存在一些问题，最后需要release还有destroy
+@author: Big_Hao
+"""
 import cv2
 
 capture = cv2.VideoCapture(0)
-
 while(True):
     ret, frame = capture.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -22,10 +28,8 @@ while(True):
     frame_rate = capture.get(5)
     #print(frame_rate)
     text = 'Frame rate = '+str(frame_rate)+' '+'Image size = '+str(width)+'*'+str(height)
-    cv2.putText(frame,text, (20,20), cv2.FONT_HERSHEY_SIMPLEX, 0.7,(0,0,255), 1, cv2.LINE_AA)
-    
-    cv2.imshow('frame',frame)
-    
+    cv2.putText(frame,text, (20,20), cv2.FONT_HERSHEY_SIMPLEX, 0.7,(0,0,255), 1, cv2.LINE_AA)    
+    cv2.imshow('frame',frame)    
     if cv2.waitKey(1) == ord('q'):
         break
 
