@@ -42,3 +42,5 @@ capture.release()
 cv2.destroyAllWindows()
 ```
 这两句，要不然是不能运行出来的
+
+## 第二章 [关于服务器](https://github.com/Hao-Xu-optics/Test-Project1/blob/master/About%20The%20Server.md)
