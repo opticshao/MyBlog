@@ -71,7 +71,7 @@ username@ip  #eg:mike@11.11.11.111
 ![image6](https://github.com/Hao-Xu-optics/Test-Project1/blob/master/images/%E6%B7%BB%E5%8A%A0%E8%B4%A6%E6%88%B7.png)
 ![image7](https://github.com/Hao-Xu-optics/Test-Project1/blob/master/images/%E8%BE%93%E5%85%A5%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8Chost.png)
 
-输入了账户之后应该会弹出来一个选项选择保存config文件的位置，选择第一个即可，登录过程中可能会让输入几次密码，登陆成功之后，再把自己的文件调出来（网上教程有讲），看到的文件跟自己在mobaxterm上面看到的是一样的，只不过这里vscode可能用起来方便一点，而且vscode里面可以很方便地编辑，运行文件
+输入了账户之后应该会弹出来一个选项选择保存config文件的位置，选择第一个即可，随后让选择platform的时候咱们实验室要选择**Linux**，别选**Windows**，登录过程中可能会让输入几次密码，登陆成功之后，再把自己的文件调出来（网上教程有讲），看到的文件跟自己在mobaxterm上面看到的是一样的，只不过这里vscode可能用起来方便一点，而且vscode里面可以很方便地编辑，运行文件
 
 **下面说一些部分库的安装**
 ```
