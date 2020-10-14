@@ -11,7 +11,7 @@
 
 
 * **推导过程的源码如下：**
-
+``` markdown
 取经过$f_1$汇聚后的光源为点光源，紧靠Lens2前表面的光场为：
 
 $\tilde{E}(x_1,y_1) = Aexp(ikl) \cdot exp[\frac{ik}{2l}(x_1^2 + y_1^2)]$
@@ -48,8 +48,9 @@ $$
     &= C \iint_{- \infty}^{\infty} \, \tilde{t}(x_1,y_1) \cdot A exp(-ikl') \cdot exp[-i2\pi (\frac{x}{\lambda l'} x_1 + \frac{y}{\lambda l'}y_1)] \mathrm{d}x_1\,\mathrm{d}y_1 \\
     &= C' \iint_{- \infty}^{\infty} \, \tilde{t}(x_1,y_1) \cdot exp[-i2\pi (\frac{x}{\lambda l'} x_1 + \frac{y}{\lambda l'}y_1)] \mathrm{d}x_1\,\mathrm{d}y_1 \\
     &= C \cdot \mathcal{F}[\tilde{t}(x_1,y_1)] |_{u=\frac{x}{\lambda}l',v=\frac{y}{\lambda}l'}
-
+    
 \end{aligned}
 
 
 $$
+```
