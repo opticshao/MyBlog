@@ -1,0 +1,45 @@
+
+# 关于傅里叶平面对应关系的推导
+**（公式使用latex敲入）**
+
+取经过$f_1$汇聚后的光源为点光源，紧靠Lens2前表面的光场为：
+
+$\tilde{E}(x_1,y_1) = Aexp(ikl) \cdot exp[\frac{ik}{2l}(x_1^2 + y_1^2)]$
+
+经过Lens2的傅里叶变换之后，在Lens2后表面的光场分布为：
+
+$\tilde{E'}(x_1,y_1) = Aexp(ikl') \cdot exp[-\frac{ik}{2l'}(x_1^2 + y_1^2)]$
+
+再经过被测物体之后，带有被测物体的透过率信息：
+
+$\tilde{E''}(x_1,y_1) = \tilde{t}(x_1,y_1) \cdot \tilde{E'}(x_1,y_1)$
+
+从Object平面到Aperture平面，使用菲涅尔衍射公式：
+ 
+$$
+\begin{aligned}
+
+\tilde{E}(x,y) 
+&= \frac{exp(ikl')}{i \lambda l' }  \iint_{- \infty}^{\infty} \, \tilde{E''}(x_1,y_1) \cdot exp\{ \frac{ik}{2l'}[(x-x_1^2)+(y-y_1^2)] \}\mathrm{d}x_1\,\mathrm{d}y_1 \\ 
+
+&= \frac{exp(ikl')}{i \lambda l' } \iint_{- \infty}^{\infty} \, \tilde{E''}(x_1,y_1) \cdot exp[ \frac{ik}{2l'}(x^2+y^2) ]\cdot exp[\frac{ik}{2l'}(x_1^2+y_1^2)] \cdot exp[-\frac{ik}{l'}(xx_1+yy_1)] \mathrm{d}x_1\,\mathrm{d}y_1 \\
+
+&= \frac{exp(ikl')}{i \lambda l' } \cdot exp[\frac{ik}{2l'}(x^2+y^2) ] \iint_{- \infty}^{\infty} \, \tilde{E''}(x_1,y_1) \cdot exp[\frac{ik}{2l'}(x_1^2+y_1^2)] \cdot exp[-i2\pi (\frac{x}{\lambda l'} x_1 + \frac{y}{\lambda l'}y_1)] \mathrm{d}x_1\,\mathrm{d}y_1
+    
+\end{aligned}
+$$
+
+将$\tilde{E''}(x_1,y_1)$代入上式，并用$C$表示$\frac{exp(ikl')}{i \lambda l' }$，用$C'$表示$C\cdot A exp(-ikl')$则有
+
+$$
+\begin{aligned}
+
+    \tilde{E}(x,y) 
+    &= C \iint_{- \infty}^{\infty} \, \tilde{t}(x_1,y_1) \cdot A exp(-ikl') \cdot exp[-i2\pi (\frac{x}{\lambda l'} x_1 + \frac{y}{\lambda l'}y_1)] \mathrm{d}x_1\,\mathrm{d}y_1 \\
+    &= C' \iint_{- \infty}^{\infty} \, \tilde{t}(x_1,y_1) \cdot exp[-i2\pi (\frac{x}{\lambda l'} x_1 + \frac{y}{\lambda l'}y_1)] \mathrm{d}x_1\,\mathrm{d}y_1 \\
+    &= C \cdot \mathcal{F}[\tilde{t}(x_1,y_1)] |_{u=\frac{x}{\lambda}l',v=\frac{y}{\lambda}l'}
+
+\end{aligned}
+
+
+$$
