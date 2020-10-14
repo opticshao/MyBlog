@@ -1,6 +1,10 @@
 
 # 关于傅里叶平面对应关系的推导
 **（公式使用latex敲入）**
+成像模型如下图所示：
+
+![image1](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/%E6%88%90%E5%83%8F%E6%A8%A1%E5%9E%8B.png)
+
 
 取经过$f_1$汇聚后的光源为点光源，紧靠Lens2前表面的光场为：
 
