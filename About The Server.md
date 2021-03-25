@@ -146,6 +146,6 @@ conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=9.2 -c pytorch #如�
 
 安装成功：
 
-！[image12](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/4.png)
+![image12](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/4.png)
 
 （别跟我一样蠢，要不然当然是导入不进来的）
