@@ -99,4 +99,35 @@ pip install keras -i http://pypi.mirrors.ustc.edu.cn/simple/  #采用中科大�
 ## 2021.03.25（没错，时隔半年我又回来了，梅开三度再开始学深度学习）
 **今天的主要内容是在服务器上安装pytorch（这里的版本是1.5.1）**
 
+首先列出来参考的几个链接：
+1.[看起来最简单明了](https://blog.csdn.net/qq_39214686/article/details/109009406)
+2.[主要是关于镜像](https://blog.csdn.net/lelelek/article/details/114290971)
 
+**第零步————首先当然是创建环境啦！**
+创建环境的教程网上也有很多，这里给出参考：
+
+```
+conda create -n pytorch python=3.X #pytorch指的是自己pytorch环境的名字，随意好了！py版本根据实际情况定
+source activate pytorch #激活环境
+```
+
+（这里还是有个小插曲的，时隔半年再用服务器，不知道为啥conda啥也干不了，干啥都出错，一怒之下把Anaconda全部删了，然后再按照前文的记录重新装了一遍（XXX！，装的时候还是心态不要崩）
+
+
+**第一步————上pytorch官网找conda指令**
+[Pytorch官网](https://pytorch.org/get-started/locally/)
+进了官网之后，可以根据你电脑的系统、语言、CUDA版本选择相应的安装指令，对我们实验室来说，CUDA版本稍微有点旧，PyTorch一般也不会装比较新的，倾向于装以前的稳定版本，所以这里不能直接找到想要安装的指令，但是好在上面有一句话：“install previous versions of PyTorch”，那么直接进这个之前版本，在里面选择想要的就好
+
+这里给出我今天安装的版本指令：
+```
+conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=9.2 -c pytorch #如果想要使用镜像源的话，最后的-c pytorch要删掉，具体参考上面的参考链接2
+```
+
+**第二步————在服务器上面无脑安装**
+
+看着进度条慢慢滑就好了，不知道为啥今天格外的顺利！
+
+不过也还有一点小插曲，可能是网络的原因，pytorch这些比较大的文件没有下载下来，所以又重新配置了镜像源（具体参考之前提到的参考链接2），不过！一定要看清楚那个镜像源的细节，比如说用第一个好像里面就没有pytorch，就是网址的最后几个名词注意一下
+
+顺利装好！然后测试！
+**测试的时候，记得进到Python再import torch**（别跟我一样蠢，要不然当然是导入不进来的）
