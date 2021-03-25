@@ -2,8 +2,11 @@
 参考网址:[成像工程实验室关于服务器配置的教程](https://github.com/Imaging-Engineering-Lab-ZJU/ServerInfos/blob/master/Environments.md)
 
 **手动目录**
+
 1.2020.10.06（安装Anaconda）
+
 2.VScode添加Remote SSH
+
 3.2021.03.25（安装Pytorch）
 
 ## 缘由
