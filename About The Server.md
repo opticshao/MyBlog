@@ -112,7 +112,10 @@ conda create -n pytorch python=3.X #pytorch指的是自己pytorch环境的名字
 source activate pytorch #激活环境
 ```
 
-（这里还是有个小插曲的，时隔半年再用服务器，不知道为啥conda啥也干不了，干啥都出错，一怒之下把Anaconda全部删了，然后再按照前文的记录重新装了一遍（XXX！，装的时候还是心态不要崩）
+！[激活安装环境](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/0.png)
+
+
+（这里还是有个小插曲的，时隔半年再用服务器，不知道为啥conda居然啥也干不了，干啥都出错，一怒之下把Anaconda全部删了，然后再按照前文的记录重新装了一遍（XXX！，装的时候还是心态不要崩）
 
 
 **第一步————上pytorch官网找conda指令**
