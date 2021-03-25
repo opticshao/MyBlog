@@ -112,7 +112,7 @@ conda create -n pytorch python=3.X #pytorch指的是自己pytorch环境的名字
 source activate pytorch #激活环境
 ```
 
-！[激活安装环境](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/0.png)
+！[image8](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/0.png)
 
 
 （这里还是有个小插曲的，时隔半年再用服务器，不知道为啥conda居然啥也干不了，干啥都出错，一怒之下把Anaconda全部删了，然后再按照前文的记录重新装了一遍（XXX！，装的时候还是心态不要崩）
@@ -121,7 +121,13 @@ source activate pytorch #激活环境
 **第一步————上pytorch官网找conda指令**
 [Pytorch官网](https://pytorch.org/get-started/locally/)
 
+![image9](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/1.png)
+
 进了官网之后，可以根据你电脑的系统、语言、CUDA版本选择相应的安装指令，对我们实验室来说，CUDA版本稍微有点旧，PyTorch一般也不会装比较新的，倾向于装以前的稳定版本，所以这里不能直接找到想要安装的指令，但是好在上面有一句话：“install previous versions of PyTorch”，那么直接进这个之前版本，在里面选择想要的就好
+
+![image10](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/2.png)
+
+![image11](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/3.png)
 
 这里给出我今天安装的版本指令：
 ```
@@ -137,5 +143,9 @@ conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=9.2 -c pytorch #如�
 顺利装好！然后测试！
 
 **测试的时候，记得进到Python再import torch**
+
+安装成功：
+
+！[image12](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/4.png)
 
 （别跟我一样蠢，要不然当然是导入不进来的）
