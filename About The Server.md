@@ -185,3 +185,5 @@ pip install tensorflow-gpu==1.10.0
 import tensorflow as tf
 print(tf.__version__)
 ```
+
+好耶！装成功了！
