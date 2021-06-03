@@ -157,3 +157,16 @@ conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=9.2 -c pytorch #如�
 ![image12](https://github.com/Hao-Xu-optics/MyBlog/blob/master/images/2021.03.25/4.png)
 
 （别跟我一样蠢，要不然当然是导入不进来的）
+
+## 2021.06.03 安装tensorflow1.10.0
+
+首先当然还是要创建一个环境：
+```Linux
+conda create -n tf110 python=3.6
+```
+
+随后进入环境并安装tensorflow的指定版本：
+```Linux
+source activate tf110
+conda install tensorflow-gpu==1.10.0
+```
