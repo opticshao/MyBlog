@@ -177,3 +177,11 @@ sad，用不了，卸载重装
 ```LInux
 pip uninstall tensorflow
 ```
+
+double sad 还是用不了，再重新卸载，然后这回不用conda装了。这回用pip装：
+```Linux
+pip install tensorflow-gpu==1.10.0
+# 测试是否装成功
+import tensorflow as tf
+print(tf.__version__)
+```
