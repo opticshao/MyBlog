@@ -172,3 +172,8 @@ conda create -n tf110 python=3.6
 source activate tf110
 conda install tensorflow-gpu==1.10.0
 ```
+
+sad，用不了，卸载重装
+```LInux
+pip uninstall tensorflow
+```
