@@ -11,6 +11,8 @@
 
 4.2021.06.03 安装tensorflow
 
+5.2021.08.16 VScode Remote SSH连不上服务器，报错："command '_workbench.downloadResource' failed"
+
 ## 缘由
 关于服务器的配置问题，实验室的师兄师姐都写了很详细的教程，按照教程来做肯定没有问题，这里只是记录一下我个人配置的过程，仅适用于本实验室
 
