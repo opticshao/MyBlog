@@ -189,13 +189,13 @@ print(tf.__version__)
 好耶！装成功了！
 
 
-## 关于Remote -SSH连不上服务器的问题
+## 关于VScode Remote -SSH连不上服务器的问题
 
 放完假回来之后，连接的时候一直出现下面这个问题
 
 ```
 "command '_workbench.downloadResource' failed"
-···
+```
 
 网上找了好多办法都不太行（其实主要是新的tar文件下载地址不对），后来看到了这个博客
 
