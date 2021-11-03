@@ -1,0 +1,54 @@
+## 服务器上的一些指令
+
+# Tmux
+1. tmux new -s xxx  //新建session
+2. ctrl+B D  //返回上一级session
+3. ctrl+B C  //creat 新建一个窗口
+4. ctrl+B %  //分屏
+5. ctrl+B P  //Page换页
+6. tmux attach -t 0 //接入会话
+7. tmux ls //列出可查看的所有Tmux会话
+
+参考链接：https://www.ruanyifeng.com/blog/2019/10/tmux.html
+
+# Linux
+```
+1. htop
+2. nvidia-smi
+3. kill PID：杀死某进程
+4. df -lh：查看磁盘的使用情况以及文件系统被挂载的位置
+5. nvcc -V：查看CUDA版本
+6. watch -n 1 nvidia-smi #每隔1s显示GPU所有情况
+7. free 查看系统内存
+8. last 查看用户登录日志
+9. w查看活动用户
+```
+
+
+差不多就是这些吧，参考链接：
+
+(https://blog.csdn.net/ft_sunshine/article/details/91993590?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242)
+
+(https://blog.csdn.net/sysstc/article/details/89488881?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-5.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-5.control)
+
+(https://www.cnblogs.com/mmzs/p/9239715.html)
+
+---
+另外还有Linux关于文件夹的操作：
+参考链接：
+https://zhuanlan.zhihu.com/p/25013467
+
+# 其他一些指令
+1.把数据从一台服务器转移到另外一台
+```
+scp -p -r /home/www/ 39.106.71.70:/home/www/
+
+将当前服务器的 /home/www 文件 传输到39.106.71.70 的/home/www/文件下
+===========
+更新
+===========
+上面用法稍有问题，应该要指定对方用户名的（如果你在两个远程上的名字不一样的话：
+scp -p -r （路径） xuh@10.12.13.237:(路径/dir)
+```
+
+
