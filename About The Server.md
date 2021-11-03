@@ -215,6 +215,7 @@ https://developer.huawei.com/consumer/cn/forum/topic/0201623711683330148?fid=26
 之前237服务器上资源比较紧张，所以拜托管理员在239服务器上又新建了一个账号，但是之前安装过好多包，怎么一次性全部给迁移过来呢？
 
 这边参考了网上的几个博客，操作还算简单：
+
 https://blog.csdn.net/ft_sunshine/article/details/92215164
 https://zhuanlan.zhihu.com/p/87344422
 
