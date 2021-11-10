@@ -243,4 +243,11 @@ conda env create -f pytorch170.yaml
 但是用了镜像之后，本来是计划安装torch 1.10的，镜像源给自动安装的版本是1.4.0，目前正在解决，看看是卸载重新装看是怎么样
 
 
+## 安装Pytorch 1.7.0
+之前也安装成功过，但是好像方法不能复现了？这里重新记录下
+```
+pip install torch==1.7.0 torchvision==0.8.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+pip install torchaudio==0.7.0  -i https://pypi.tuna.tsinghua.edu.cn/simple
+torch.cuda.is_available()
+```
